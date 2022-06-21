@@ -68,14 +68,9 @@ ApplicationWindow {
     footer:ToolBar{
         RowLayout{
             ToolButton{action:actions.previousAction}
-            ToolButton{
-                action:actions.playAction
-                //actions.play.text.visible:flase
-            }
+            ToolButton{action:actions.playAction}
             ToolButton{action:actions.pauseAction}
             ToolButton{action:actions.nextAction}
-            //进度条
-            //音量
             ToolButton{action:actions.openLyricAction}
             ToolButton{action:actions.songListAction}
         }

@@ -79,10 +79,12 @@ Item {
     Action{
         id:songsearch
         text:qsTr("搜索歌曲")
+        icon.name: "system-search"
     }
     Action{
         id:mvsearch
         text:qsTr("搜索MV")
+        icon.name: "system-search"
     }
     Action{
         id:recentplay

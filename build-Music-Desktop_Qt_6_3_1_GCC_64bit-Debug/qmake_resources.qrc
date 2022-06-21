@@ -1,5 +1,5 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource prefix="/Music">
-<file alias="Actions.qml">/run/media/root/study/Qt5/playMusic-first-stage/music/Actions.qml</file>
+<file alias="Actions.qml">/root/音乐播放器/playMusic-first-stage/music/Actions.qml</file>
 </qresource>
 </RCC>
