@@ -6,7 +6,8 @@ SOURCES += \
 resources.files = main.qml
 resources.files = Actions.qml
 resources.prefix = /$${TARGET}
-RESOURCES += resources
+RESOURCES += ./qml/qml.qrc \
+    ./resource/CloudMusic.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

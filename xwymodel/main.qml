@@ -28,7 +28,7 @@ Window {
                     Layout.preferredWidth: 200
                     Layout.preferredHeight: 100
                     Label {
-                        text: "。。。音乐"
+                        text: "云上音乐"
                         font.pixelSize: 22
                         font.italic: true
                     }
