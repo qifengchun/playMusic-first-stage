@@ -23,3 +23,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 #DISTFILES += \
 #    Actions.qml \
 #    main.qml
+

@@ -93,6 +93,10 @@ Item {
     Action{
         id:skin
         text:qsTr("主题")
+        icon.source: "qrc:/image/skn.png"
+        onTriggered: {
+            dialogs.skinDialog.visible=true
+        }
     }
     Action{
         id:trackinformation

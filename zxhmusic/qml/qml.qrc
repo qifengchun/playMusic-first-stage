@@ -3,5 +3,6 @@
         <file>Actions.qml</file>
         <file>main.qml</file>
         <file>Dialogs.qml</file>
+        <file>SkinDialog.qml</file>
     </qresource>
 </RCC>
