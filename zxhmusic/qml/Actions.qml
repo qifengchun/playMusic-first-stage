@@ -4,6 +4,7 @@ import QtQuick.Controls
 Item {
     property alias openFileAction: openfile
     property alias openFolderAction: openfolder
+
     property alias exitAction: exit
     property alias openLyricAction: openLyric
     property alias closeLyricAction: closeLyric
@@ -26,12 +27,16 @@ Item {
         id:openfile
         text:qsTr("打开文件")
         icon.name:"document-open"
+        onTriggered: dialogs.fileOpen
+
     }
     Action{
         id:openfolder
         text:qsTr("打开文件夹")
-        icon.name:"folder"
+        icon.name:"document-open-recent"
+
     }
+
     Action{
         id:exit
         text:qsTr("退出")
@@ -53,6 +58,10 @@ Item {
     Action{
         id:play
         icon.name: "media-playback-start"
+//        onTriggered:onClicked,{
+////            player.play()
+//            console.log("播放中")
+//        }
     }
     Action{
         id:pause
