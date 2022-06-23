@@ -1,6 +1,7 @@
-import QtQuick
+﻿import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
+import QtQuick.Dialogs
 
 ApplicationWindow {
     id:appwindow
@@ -86,14 +87,28 @@ ApplicationWindow {
 
     Actions{
         id:actions
-        aboutAction.onTriggered: dialogs.openAboutDialog()
-    }
+        openFileAction.onTriggered: dialogs.openFileDialog()
+        aboutAction.onTriggered:    dialogs.openAboutDialog()
+        playAction.onTriggered:     content.player.play()
+        pauseAction.onTriggered:    content.player.pause()
+        previousAction.onTriggered: content.song_previous()
+
+
+        }
+
 
     Dialogs{
         id:dialogs
+        fileOpenDialog.onAccepted:
+            content.setFilesModel(fileOpenDialog.currentFiles)
+//        fileOpenDialog.onAccepted:
+//            content.song_prev(fileOpenDialog.currentFiles)
     }
 
-
+    Content{
+        id:content
+        anchors.fill: parent
+    }
 
 
 
