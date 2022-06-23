@@ -6,8 +6,11 @@ import Qt.labs.platform
 Item {
 
     function openAboutDialog() { about.open(); }
-    property alias skinDialog:skinDialog
+
     property alias fileImageDialog:fileimageDialog
+    property alias skinDialog:skinDialog
+    property alias trackInformationDialog:trackInformationDialog
+    property alias saveDialog:saveDialog
     //property alias aboutDialog:aboutDialog
 
     FileDialog{
@@ -36,5 +39,31 @@ Item {
         visible:false
     }
 
+    TrackInformationDialog{
+        id:trackInformationDialog
+        visible:false
+    }
 
+    QQC.Dialog{
+        id:saveDialog
+        title:qsTr("提示")
+        text:qsTr("曲目信息已被修改，是否要进行保存？")
+        standardButtons:StandardButton.Save| StandarButton.Discard|StandardButton.Cancel
+        onButtonClicked:{
+            if(clickedButton===StandardButton.Save){
+                if(dialogs.trackInformationDialog.visible){
+                    dialogs.trackInformationDialog.set_Information_Meta()
+                }
+            }
+            else if(StandarButton.Discard){
+                if(dialogs.trackInformationDialog.visible){
+                    dialogs.trackInformationDialog.flag=flase
+                    dialogs.trackInformationDialog.close()
+                }
+            }
+            else{
+                close()
+            }
+        }
+    }
 }

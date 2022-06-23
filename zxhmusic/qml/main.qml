@@ -7,7 +7,8 @@ ApplicationWindow {
     width: 840
     height: 680
     visible: true
-    title: qsTr("Music")
+    title: qsTr("Cloud Music")
+    property alias rootImage: backImage
     property url imageUrl: ""
     background:Image{
         id:backimage

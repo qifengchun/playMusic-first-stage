@@ -4,5 +4,6 @@
         <file>main.qml</file>
         <file>Dialogs.qml</file>
         <file>SkinDialog.qml</file>
+        <file>TrackInformationDialog.qml</file>
     </qresource>
 </RCC>

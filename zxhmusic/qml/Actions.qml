@@ -101,6 +101,10 @@ Item {
     Action{
         id:trackinformation
         text:qsTr("曲目信息")
+        icon.source: "qrc:/image/曲目信息.png"
+        onTriggered: {
+            dialogs.trackInformationDialog.visible=true
+        }
     }
     Action{
         id:login
