@@ -8,14 +8,6 @@ ApplicationWindow {
     height: 680
     visible: true
     title: qsTr("Music")
-    property url imageUrl: ""
-    background:Image{
-        id:backimage
-        fillMode:Image.PreserveAspectCrop
-        anchors.fill:parent
-        source:imageUrl
-        opacity:0.3
-    }
 
     menuBar:MenuBar{
         id:menubar
@@ -84,17 +76,11 @@ ApplicationWindow {
         }
     }
 
+
+
     Actions{
         id:actions
-        aboutAction.onTriggered: dialogs.openAboutDialog()
     }
-
-    Dialogs{
-        id:dialogs
-    }
-
-
-
 
 
 }

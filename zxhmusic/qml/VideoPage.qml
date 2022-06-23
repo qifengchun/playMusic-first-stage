@@ -1,10 +1,5 @@
 import QtQuick
 
-Item{
-
-
-
-
-
+Item {
 
 }
