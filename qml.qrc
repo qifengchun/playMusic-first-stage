@@ -1,9 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>Actions.qml</file>
-        <file>main.qml</file>
-        <file>Dialogs.qml</file>
-        <file>SkinDialog.qml</file>
-        <file>Content.qml</file>
-    </qresource>
-</RCC>
